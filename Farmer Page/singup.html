@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="singup.css">
+    <title>ListPage</title>
+    <style>
+        *
+        {
+            padding: 0%;
+            margin: 0%;
+        }
+
+        body
+        {
+        background-color: rgb(30,112,70);
+        }
+
+        .first
+        {
+            display: flex;
+        }
+        .div-left
+        {
+            margin-top:2%;
+            margin-left: -2%;
+            width: 250px;
+            height: 580px;
+            border-radius: 10px;
+            background-color: rgb(255, 253, 253);
+        }
+
+        .div-left img
+        {
+            width: 175px;
+            height: 212px;
+            margin-top: 27px;
+            margin-left: 51px;
+        }
+   
+        .link .a 
+        {
+            padding: 15px;
+            margin-left: 15%;
+        }
+        
+        a
+        {
+            text-decoration: none;
+            color:grey;
+        }
+
+        a:hover
+        {
+        color: rgb(30,112,70);
+        font-size: large;
+        font-weight: bold;
+        }
+        
+        #b:hover
+        {
+            color:blue;
+            font-weight: bold;
+        }
+
+        .second
+        {
+            display: flex;
+        }
+        .div-placeholder
+        {
+            width:76%;
+            height: 49px;
+            background-color:rgb(255, 255, 255) ;
+            margin-top: -42%;
+            margin-left: 21%;
+        }
+        input
+        {
+            display: flex;
+            padding: 10px;
+            width: 955px;
+            margin-left: 35px;
+            margin-top: -25px;
+            border: none;
+            box-shadow: inset 0px 0px 2px grey;
+            border-radius: 1.5px;
+        }
+    
+        .icon
+        {
+        display:flex;
+        }
+        .icon .fa{
+            margin-left: 10px;
+            margin-top: 15px;
+        }
+
+        .third
+        {
+            width: 76%;
+            height: 498px;
+            background-color: white;
+            margin-left: 283px;
+            border-radius: 10px;
+            margin-top: -499px;         
+        }
+       
+        .point
+        {
+            padding: 2%;
+            display: flex;
+           font-size: smaller;
+ 
+        }
+
+        .two-button
+        {
+            display: flex;
+            margin-left: 70%;
+            margin-top: -5%
+        }
+
+        .one
+        {
+        padding:8px;
+        margin-left: 18px;
+        width: 120px;
+        border-radius:5px;
+        background-color: white;
+        border: none;
+        box-shadow: inset 0.1px 0.1px 2px;
+        
+        }
+
+        .one:hover
+        {
+            background-color: rgb(30,112,70); 
+        color: white;
+        }
+
+        .list-head .ul-first    
+        {
+            display: flex;
+            justify-content: space-between;
+            padding: 25px;
+            list-style: none;
+            text-decoration: none;
+            color:grey;
+        }
+   
+        .end-to-end
+        {
+            display: flex;
+            justify-content: space-between;
+        }
+       
+        .end-to-end button
+        {
+            width: 8%;
+            padding: 10px;
+             margin: 14px;
+         } 
+  
+         .end-to-end button:hover
+         {
+            background-color: rgb(30,112,70);
+            color: white;
+            border-radius: 100%;
+         }
+
+         .end-to-end p
+         {
+          margin-top: 25px;
+          }
+
+        </style>
+    </head>
+<body>
+    <div class="self">
+
+    <div class="first">
+    <div class="div-left">
+        <img src="abcd.png"/>
+    <div class="link">
+    <p class="a" ><a href="">Dashbaord</a></p>
+    <p class="a"><a href="">Farmer Database</a></p>
+    <p class="a"><a href="">Dealer Database</a></p>
+    <p class="a"><a href="">Employee Database</a></p>
+    <p class="a"><a href="">Resources</a></p>
+    <p class="a" id="b"><i class="fa fa-sign-out" aria-hidden="true"></i>Log Out</p>
+    </div>   
+    </div>
+    </div>
+
+    <div class="second">
+    <div class="div-placeholder">
+        <div class="icon">
+            <i class="fa fa-search" aria-hidden="true"></i>
+        </div>
+        <input type="text" placeholder="Search employee,farmer,dealer">
+    </div>
+    </div>
+
+    <div class="third">
+        <div class="point">
+            <h2>Farmer List</h2>
+            </div>
+        <div class="two-button">
+            <button class="one">Add Farmer</button>
+            <button class="one">Download All</button>
+        </div>
+        <div class="list-head">
+        <ul class="ul-first">
+            <li>Farmer name</li>
+            <li>Buying price</li>
+            <li>Quantity</li>
+            <li>Threshold Value</li>
+            <li>Modify</li>
+            <li>Delete</li>
+        </ul>
+        <hr/>   
+        <div class="list-details-first">
+            <ul class="ul-second">
+                <li class="item1">Maggi</li>
+                <li class="item2"><i class="fa fa-inr" aria-hidden="true"></i>450</li>
+                <li class="item3">20 Packets</li>
+                <li class="item4">12 Packets</li>
+                <li class="item5"><i class="fa fa-trash" aria-hidden="true"></i></li>
+            </ul>
+        </div>
+        <hr style="margin-top: 1%;"/>
+        
+        <div class="list-details-second">
+            <ul class="ul-third">
+                <li class="item1">Pizza</li>
+                <li class="item2"><i class="fa fa-inr" aria-hidden="true"></i>250</li>
+                <li class="item3">10 Packets</li>
+                <li class="item4">5 Packets</li>
+                <li class="item5"><i class="fa fa-trash" aria-hidden="true"></i></li>
+            </ul>
+        </div>
+        <hr style="margin-top: 1%;"/>
+
+        <div class="list-details-third">
+            <ul class="ul-fourth">
+                <li class="item1">Pizza</li>
+                <li class="item2"><i class="fa fa-inr" aria-hidden="true"></i>250</li>
+                <li class="item3">10 Packets</li>
+                <li class="item4">5 Packets</li>
+                <li class="item5"><i class="fa fa-trash" aria-hidden="true"></i></li>
+            </ul>
+        </div>
+        <hr style="margin-top: 1%;"/>
+
+        <div class="list-details-fourth">
+            <ul class="ul-fifth">
+                <li class="item1">Red Bull</li>
+                <li class="item2"><i class="fa fa-inr" aria-hidden="true"></i>600</li>
+                <li class="item3">20 Packets</li>
+                <li class="item4">15 Packets</li>
+                <li class="item5"><i class="fa fa-trash" aria-hidden="true"></i></li>
+            </ul>
+        </div>
+        <hr style="margin-top: 1%;"/>
+    
+        <div class="list-details-sixth">
+            <ul class="ul-seventh">
+                <li class="item1">Coca Cola</li>
+                <li class="item2"><i class="fa fa-inr" aria-hidden="true"></i>100</li>
+                <li class="item3">10 Packets</li>
+                <li class="item4">5 Packets</li>
+                <li class="item5"><i class="fa fa-trash" aria-hidden="true"></i></li>
+            </ul>
+        </div>
+        <hr style="margin-top: 1%;"/>
+
+          
+        <div class="list-details-seventh">
+            <ul class="ul-eighth">
+                <li class="item1">Coca Cola</li>
+                <li class="item2"><i class="fa fa-inr" aria-hidden="true"></i>100</li>
+                <li class="item3">10 Packets</li>
+                <li class="item4">5 Packets</li>
+                <li class="item5"><i class="fa fa-trash" aria-hidden="true"></i></li>
+            </ul>
+        </div>
+    </div>
+    
+    <div class="end-to-end">
+    <button>Previous</button>
+    <p>Page 1 of 10</p>
+    <button>Next</button>
+    </div>
+    
+</div>
+    </div>
+    
+</body>
+</html>
